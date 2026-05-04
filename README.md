@@ -10,6 +10,7 @@ Licenciatura em Engenharia de Sistemas Informáticos (*regime laboral*) 2025-26
 > constituição do grupo 15
 
 | Número | Nome |
+|--------|-----------------|
 | 27958 | Bruno Dantas |
 | 22840 | Gonçalo Correia |
 | 21143 | João Castro |
