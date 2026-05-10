@@ -33,7 +33,7 @@ def run_source(source):
 #endregion
 
 #region Entry point
-if name == 'main':
+if __name__ == '__main__':
     if len(sys.argv) == 2:
         # Corre o ficheiro passado como argumento
         # exemplo: python main.py entrada.lf

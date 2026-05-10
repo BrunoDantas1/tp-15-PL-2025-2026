@@ -35,7 +35,6 @@ tokens = (
     'COLON',
     'LPAREN',
     'RPAREN',
-    'COMMA',
     'UNDERSCORE',
     'PLUS',
     'MINUS',
@@ -60,7 +59,6 @@ t_SEMICOLON  = r';'
 t_COLON      = r':'
 t_LPAREN     = r'\('
 t_RPAREN     = r'\)'
-t_COMMA      = r','
 t_PLUS       = r'\+'
 t_MINUS      = r'-'
 t_TIMES      = r'\*'
@@ -94,7 +92,7 @@ def t_ID(t):
 
 #encontra mudanças de linha e atualiza o numero de linhas do lexer
 def t_newline(t):
-    r'\n+'+
+    r'\n+'
     t.lexer.lineno += len(t.value)
 
 #Quando aparece um caractere não reconhecido pelo lexer, esta função mostra o erro e manda o lexer continuyar a analisar o resto do codigo

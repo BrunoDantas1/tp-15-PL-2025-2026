@@ -1,8 +1,9 @@
 #
 import ply.yacc as yacc
-from lexer import tokens
-from ast_nodes import (Num, BoolLit, Var, BinOp, UnaryOp, IfExpr, WhenExpr, FuncCall, LetVal, Funsig, LetFun, Program)
+from lexer import tokens, build
+from ast_nodes import (Num, BoolLit, Var, BinOp, UnaryOp, IfExpr, WhenExpr, FunCall, LetVal, FunSig, LetFun, Program)
 
+start = 'program'
 
 #do menos para o mais importante
 precedence = (
@@ -232,3 +233,8 @@ def p_error(p):
 #endregion
 
 
+parser = yacc.yacc()
+
+def parse(text):
+    lexer = build()
+    return parser.parse(text, lexer=lexer)
