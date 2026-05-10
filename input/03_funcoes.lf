@@ -1,0 +1,17 @@
+-- Secção C: Funções
+
+fun inc : Int -> Int;
+let inc x = x + 1;
+
+fun dobro : Int -> Int;
+let dobro n = n * 2;
+
+fun ePositivo : Int -> Bool;
+let ePositivo n = n > 0;
+
+
+-- Testar as funções
+let r1 : Int = inc(5);
+let r2 : Int = dobro(7);
+let r3 : Bool = ePositivo(3);
+let r4 : Bool = ePositivo(-2);

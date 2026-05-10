@@ -1,0 +1,16 @@
+-- Secção B: Definições com let
+
+let base : Int = 10;
+let ativo : Bool = true;
+let area : Int = 4 * 5;
+
+-- Usar variáveis em expressões seguintes
+let largura : Int = 8;
+let altura : Int = 5;
+let areaRect : Int = largura * altura;
+let teste : Bool = altura < largura;
+
+{- Este exemplo deve ser rejeitado pelo analisador semântico,
+   porque a expressão definida tem tipo Bool, mas o identificador
+   foi declarado com tipo Int. -}
+let valor : Int = true;

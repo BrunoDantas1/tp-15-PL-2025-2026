@@ -1,0 +1,47 @@
+-- Secção D: Condicional e seleção de casos
+
+-- if/then/else
+fun absoluto : Int -> Int;
+let absoluto n = if n < 0 then 0 - n else n;
+
+-- when com padrões numéricos
+fun eZero : Int -> Bool;
+let eZero n =
+  when (n) is
+    0 -> true;
+    _ -> false;
+  end;
+
+-- when com múltiplos padrões
+fun avalia : Int -> Bool;
+let avalia x =
+  when (x) is
+    -1 -> true;
+    1  -> true;
+    0  -> false;
+    _  -> true;
+  end;
+
+-- when com padrões booleanos
+fun boolToInt : Bool -> Int;
+let boolToInt b =
+  when (b) is
+    true  -> 1;
+    false -> 0;
+  end;
+
+-- Testar if/then/else
+let r1 : Int = absoluto(-5);
+let r2 : Int = absoluto(8);
+
+-- Testar when numérico
+let r3 : Bool = eZero(0);
+let r4 : Bool = eZero(3);
+
+-- Testar when com múltiplos padrões
+let r5 : Bool = avalia(-1);
+let r6 : Bool = avalia(0);
+
+-- Testar when booleano
+let r7 : Int = boolToInt(true);
+let r8 : Int = boolToInt(false);

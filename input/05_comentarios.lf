@@ -1,0 +1,14 @@
+-- Secção E: Comentários
+
+-- Isto é um comentário de linha
+
+{- Isto é um comentário
+   de múltiplas linhas -}
+
+let x : Int = 10; -- comentário no fim da linha
+
+{- Este let está comentado e não deve ser processado
+let y : Int = 20;
+-}
+
+let z : Int = 5;

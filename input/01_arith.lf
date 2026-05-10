@@ -1,4 +1,11 @@
+-- Secção A: Expressões aritméticas e booleanas
 
-3 < 5;
-10 == 7;
--(4 + 1) == 5;
+-- Expressões aritméticas
+let a1 : Int = 3 + 4;
+let a2 : Int = 10 - 2 * 3;
+let a3 : Int = (8 + 2) * 5;
+
+-- Expressões booleanas
+let b1 : Bool = 3 < 5;
+let b2 : Bool = 10 == 7;
+let b3 : Bool = (4 + 1) == 5;
