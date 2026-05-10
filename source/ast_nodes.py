@@ -50,7 +50,7 @@ class IfExpr(Node):
     def __repr__(self):
         return f"IfExpr({self.cond}, {self.then_expr}, {self.else_expr})"
 
-#Guarda um 'when' e os seus casos, ex: when x = 0 then 1 else 2, o expr é x = 0 e os cases são [(1, 2)]
+#Guarda um 'when' e os seus casos, ex: when (x) is 3 then true else false, o expr é x = 0 e os cases são [(3, true), ('_', false)]
 class WhenExpr(Node):
     def __init__(self, expr, cases):
         self.expr  = expr
