@@ -1,3 +1,5 @@
+# Lexer (PLY): define tokens e regras léxicas; usar `build()` para criar lexer
+
 import ply.lex as lex
 
 #palavras reservadas

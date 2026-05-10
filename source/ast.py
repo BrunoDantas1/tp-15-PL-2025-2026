@@ -1,3 +1,5 @@
+# AST: classes que representam nós sintáticos (Num, Var, BinOp, ...)
+
 class Node:
     pass
 
