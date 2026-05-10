@@ -1,4 +1,4 @@
-# Lexer (PLY): define tokens e regras léxicas; usar `build()` para criar lexer
+# Lexer (PLY): define tokens e regras léxicas;
 
 import ply.lex as lex
 
