@@ -1,7 +1,7 @@
 #
 import ply.yacc as yacc
 from lexer import tokens
-from ast import (Num, BoolLit, Var, BinOp, UnaryOp, IfExpr, WhenExpr, FuncCall, LetVal, Funsig, LetFun, Program)
+from ast_nodes import (Num, BoolLit, Var, BinOp, UnaryOp, IfExpr, WhenExpr, FuncCall, LetVal, Funsig, LetFun, Program)
 
 
 #do menos para o mais importante
